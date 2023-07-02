@@ -1,3 +1,5 @@
+import '../style/noticia.css';
+
 export default function Noticia() {
 
     return(

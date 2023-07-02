@@ -24,6 +24,10 @@ body {
   background-color: #ffffff;
 }
 
+::placeholder {
+  color: white;
+}
+
 /*---------------------------------------*/
 
 header {
@@ -40,11 +44,10 @@ header nav {
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  text-align: center;
 }
 
-header nav i {
-  color: white;
+header nav img {
+  cursor: pointer;
 }
 
 header nav p {
@@ -52,8 +55,19 @@ header nav p {
   font-size: 40px;
 }
 
-header nav input {
-  background-color: transparent;
+header nav form input {
+  background-color: #008BB4;
+  border-radius: 10px;
+  padding: 10%;
+  color: white;
   outline: none;
   border: none;
+}
+
+input#busca {
+  background-image: url('../public/assets/search.svg');
+  background-size: 20px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  text-indent: 22px;
 }

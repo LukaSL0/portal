@@ -4,10 +4,12 @@ export default function Header() {
         <header>
             <nav>
                 <div className="menu">
-                    <i class="fa-solid fa-bars"></i>
+                    <img src="assets/menu.svg" alt="" />
                 </div>
                 <a href="/"><p>Portal<strong>MCZ</strong></p></a>
-                <input type="text" name="busca" placeholder="Buscar" />
+                <form method="post">
+                    <input type="text" id="busca" name="busca" placeholder="Buscar" />
+                </form>
             </nav>
         </header>
     )

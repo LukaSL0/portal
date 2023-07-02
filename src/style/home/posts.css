@@ -1,14 +1,10 @@
-:root {
-    --altura: 740px;
-}
-
 .posts {
     border-radius: 10px;
-    background: url('../../public/assets/mar.png');
+    background: url('../../../public/assets/mar.png');
     background-size: cover;
     width: 1200px;
     height: 740px;
-    margin: 10% auto 0 auto;
+    margin: 10% auto 4% auto;
 }
 
 .posts .post {

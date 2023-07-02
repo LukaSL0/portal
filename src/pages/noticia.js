@@ -2,7 +2,7 @@ import '../style/noticia.css';
 
 export default function Noticia() {
 
-    return(
+    return (
         <div>Noticia Layout</div>
     )
 }

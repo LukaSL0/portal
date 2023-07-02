@@ -1,19 +1,17 @@
 import './App.css';
-import api from './Api.js';
-import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home.js';
+import Noticia from './pages/noticia.js';
 
 export default function App() {
 
-  useEffect(() => {
-    api.get('/').then(res=> {
-      console.log(res.data);
-    })
-  }, [])
-
   return (
-    <div className="App">
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/noticia' element={<Noticia />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

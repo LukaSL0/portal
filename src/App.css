@@ -1,9 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/*---------------------------------------*/
+
+header {
+  position: fixed;
+  background-color: #0aacdc;
+  width: 100%;
+  height: 80px;
+  padding: 0 5%;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+header nav i {
+  color: white;
+}
+
+header nav p {
+  color: white;
+  font-size: 40px;
+}
+
+header nav input {
+  background-color: transparent;
+  outline: none;
+  border: none;
 }

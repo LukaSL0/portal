@@ -78,6 +78,36 @@
     font-size: 27px;
 }
 
+.ultimosposts .lista2 .maislida {
+    width: 100%;
+    background-color: white;
+    height: auto;
+    padding: 5% 5% 2.5% 5%;
+    display: flex;
+}
+
+.ultimosposts .lista2 .maislida .maislida-textos {
+    display: block;
+    padding: 4%;
+}
+
+.ultimosposts .lista2 .maislida img {
+    width: 195px;
+    height: 189px;
+}
+
+.ultimosposts .lista2 .maislida h2 {
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #40BE65;
+    margin-bottom: 15px;
+}
+
+.ultimosposts .lista2 .maislida p {
+    color: #7B8591;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 1366px) {
     .ultimosposts h1 {
         font-size: 48px;
@@ -105,5 +135,15 @@
     }
     .ultimosposts .lista .postagem .post-textos a {
         font-size: 16px;
+    }
+    .ultimosposts .lista2 .maislida img {
+        width: 146px;
+        height: 142px;
+    }
+    .ultimosposts .lista2 .maislida h2 {
+        font-size: 14px;
+    }
+    .ultimosposts .lista2 .maislida p {
+        font-size: 14px;
     }
 }

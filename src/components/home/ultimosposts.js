@@ -1,3 +1,4 @@
+import MaisLidas from "./modules/maislidas.js";
 import Postagem from "./modules/postagem.js";
 
 export default function UltimosPosts() {
@@ -14,7 +15,9 @@ export default function UltimosPosts() {
                     <div className="maislidas">
                         <h1>AS MAIS LIDAS</h1>
                         <div className="lista2">
-
+                            <MaisLidas />
+                            <MaisLidas />
+                            <MaisLidas />
                         </div>
                     </div>
                 </div>

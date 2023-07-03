@@ -70,9 +70,6 @@ header nav form input {
   color: white;
   outline: none;
   border: none;
-}
-
-input#busca {
   background-image: url('../public/assets/search.svg');
   background-size: 20px;
   background-position: 10px center;
@@ -141,7 +138,7 @@ input#busca {
     width: 21px;
     height: 17px;
   }
-  input#busca {
+  header nav form input {
     background-position: 10px center;
     max-width: 40px;
     text-indent: 0;

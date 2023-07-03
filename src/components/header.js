@@ -9,9 +9,9 @@ export default function Header() {
                 <a href="/"><p>Portal<strong>MCZ</strong></p></a>
                 <form method="post">
                     {
-                        (window.innerWidth > "600")?
-                            <input type="text" id="busca" name="busca" placeholder="Buscar" />:
-                            <input type="text" id="busca" name="busca" placeholder="" />
+                        (window.innerWidth > "550")?
+                            <input type="text" name="busca" placeholder="Buscar" />:
+                            <input type="text" name="busca" placeholder="" />
                     }
                 </form>
             </nav>

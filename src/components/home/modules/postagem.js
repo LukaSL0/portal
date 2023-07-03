@@ -4,9 +4,10 @@ export default function Postagem(props) {
         <div className="postagem">
             <img src={props.imagem} alt="" />
             <div className="post-textos">
-                <a href={props.linkdanoticia}>{props.tipo}</a>
+                <h2>{props.tipo}</h2>
                 <h1>{props.titulo}</h1>
                 <p>{props.desc}</p>
+                <a href={props.redirect}>Saiba mais</a>
             </div>
         </div>
     )

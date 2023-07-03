@@ -2,9 +2,9 @@
     border-radius: 10px;
     background: url('../../public/assets/mar.png');
     background-size: cover;
-    width: 1200px;
-    height: 740px;
-    margin: 10% auto 4% auto;
+    width: 63%;
+    height: auto;
+    margin: 8% auto 4% auto;
 }
 
 .posts .post {
@@ -43,20 +43,32 @@
 }
 
 .posts .post .textos h1 {
-    max-width: 800px;
+    max-width: 70%;
     font-size: 73px;
+    margin-top: 22.5%;
 }
 
 .posts .post .textos p {
-    max-width: 715px;
+    max-width: 65%;
     margin: 4% 0;
     font-size: 22px;
 }
 
+@media screen and (max-width: 1450px) {
+    .posts .post .autor p {
+        font-size: 14px;
+    }
+    .posts .post .textos h1 {
+        font-size: 65px;
+    }
+    .posts .post .textos p {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1366px) {
     .posts {
-        width: 830px;
-        height: 512px;
+        margin: 10% auto 4% auto;
     }
     .posts .post .autor img {
         width: 30px;
@@ -67,11 +79,124 @@
     }
     .posts .post .textos h1 {
         font-size: 60px;
-        max-width: 553px;
     }
     .posts .post .textos p {
-        max-width: 495px;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .posts .post .autor p {
+        font-size: 12px;
+    }
+    .posts .post .textos h1 {
+        font-size: 52px;
+    }
+    .posts .post .textos p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .posts .post .autor p {
+        font-size: 12px;
+    }
+    .posts .post .textos h1 {
+        font-size: 46px;
+    }
+    .posts .post .textos p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .posts {
+        margin: 14% auto 4% auto;
+    }
+    .posts .post .autor p {
+        font-size: 11px;
+    }
+    .posts .post .textos h1 {
+        font-size: 39px;
+    }
+    .posts .post .textos p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .posts {
+        margin: 16% auto 4% auto;
+    }
+    .posts .post .autor img {
+        width: 23px;
+        height: 23px;
+    }
+    .posts .post .autor p {
+        font-size: 9px;
+    }
+    .posts .post .textos h1 {
+        font-size: 32px;
+    }
+    .posts .post .textos p {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .posts {
+        margin: 18% auto 4% auto;
+    }
+    .posts .post .autor img {
+        width: 20px;
+        height: 20px;
+    }
+    .posts .post .autor p {
+        font-size: 8px;
+    }
+    .posts .post .textos h1 {
+        font-size: 26px;
+    }
+    .posts .post .textos p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .posts {
+        margin: 20% auto 4% auto;
+    }
+    .posts .post .autor img {
+        width: 16px;
+        height: 16px;
+    }
+    .posts .post .autor p {
+        font-size: 7px;
+    }
+    .posts .post .textos h1 {
+        font-size: 22px;
+    }
+    .posts .post .textos p {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .posts {
+        margin: 23% auto 4% auto;
+    }
+    .posts .post .autor img {
+        width: 15px;
+        height: 15px;
+    }
+    .posts .post .autor p {
+        font-size: 6px;
+    }
+    .posts .post .textos h1 {
+        font-size: 19px;
+    }
+    .posts .post .textos p {
+        font-size: 5px;
     }
 }
 
@@ -121,7 +246,7 @@
 }
 
 .ultimosposts .lista .postagem img {
-    height: 364px;
+    width: 100%;
 }
 
 .ultimosposts .boxes .lista h2 {
@@ -196,7 +321,6 @@
         height: 573px;
     }
     .ultimosposts .lista .postagem img {
-        height: 260px;
         width: 100%;
     }
     .ultimosposts .boxes .lista h2 {

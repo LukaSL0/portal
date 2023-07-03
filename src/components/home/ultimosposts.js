@@ -17,7 +17,6 @@ export default function UltimosPosts() {
                         <div className="lista2">
                             <MaisLidas />
                             <MaisLidas />
-                            <MaisLidas />
                         </div>
                     </div>
                 </div>

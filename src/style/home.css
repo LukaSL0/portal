@@ -105,7 +105,7 @@
 
 .ultimosposts .lista .postagem {
     width: 573px;
-    height: 573px;
+    height: 765px;
     border-radius: 10px;
     background-color: white;
     margin: 0 1% 2.5% 1%;
@@ -192,6 +192,7 @@
     }
     .ultimosposts .lista .postagem {
         width: 410px;
+        height: 573px;
     }
     .ultimosposts .lista .postagem img {
         height: 260px;

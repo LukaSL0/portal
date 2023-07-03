@@ -7,7 +7,9 @@ export default function Postagem(props) {
                 <h2>{props.tipo}</h2>
                 <h1>{props.titulo}</h1>
                 <p>{props.desc}</p>
-                <a href={props.redirect}>Saiba mais</a>
+                <div className="redirect">
+                    <a href={props.redirect}>Saiba mais</a>
+                </div>
             </div>
         </div>
     )

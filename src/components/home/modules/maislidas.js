@@ -7,6 +7,7 @@ export default function MaisLidas() {
         const ultimo = maislidas[maislidas.length - 1];
         ultimo.style.borderRadius = '0 0 10px 10px';
         ultimo.style.padding = '5%';
+        ultimo.style.marginBottom = '10px';
     }, [])
 
     return (

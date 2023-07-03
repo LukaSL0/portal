@@ -80,7 +80,7 @@
 .ultimosposts {
     width: 100%;
     background-color: #EAEAEA;
-    padding: 1% 1% 2.5% 1%;
+    padding: 1%;
 }
 
 .ultimosposts h1 {
@@ -105,18 +105,14 @@
 
 .ultimosposts .lista .postagem {
     width: 573px;
-    height: auto;
+    height: 573px;
     border-radius: 10px;
     background-color: white;
-    margin: 0 1% 1% 1%;
+    margin: 0 1% 2.5% 1%;
 }
 
 .ultimosposts .lista .postagem .post-textos {
     padding: 5%;
-}
-
-.ultimosposts .lista .postagem .post-textos .redirect {
-    margin-bottom: 18px;
 }
 
 .ultimosposts .lista .postagem .post-textos a {
@@ -196,7 +192,6 @@
     }
     .ultimosposts .lista .postagem {
         width: 410px;
-        border-radius: 10px;
     }
     .ultimosposts .lista .postagem img {
         height: 260px;

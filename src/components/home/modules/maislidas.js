@@ -6,6 +6,7 @@ export default function MaisLidas() {
         const maislidas = document.querySelectorAll('.maislida');
         const ultimo = maislidas[maislidas.length - 1];
         ultimo.style.borderRadius = '0 0 10px 10px';
+        ultimo.style.padding = '5%';
     }, [])
 
     return (

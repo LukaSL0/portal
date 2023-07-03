@@ -90,17 +90,13 @@
 }
 
 .ultimosposts .lista {
-    width: calc(100%/3*2);
     display: flex;
     flex-wrap: wrap;
 }
 
-.ultimosposts .maislidas {
-    width: calc(100%/3);
-}
-
 .ultimosposts .boxes {
     display: flex;
+    justify-content: center;
 }
 
 .ultimosposts .lista .postagem {
@@ -109,6 +105,7 @@
     border-radius: 10px;
     background-color: white;
     margin: 0 1% 2.5% 1%;
+    max-width: 47%;
 }
 
 .ultimosposts .lista .postagem .post-textos {
@@ -125,7 +122,6 @@
 
 .ultimosposts .lista .postagem img {
     height: 364px;
-    width: 100%;
 }
 
 .ultimosposts .boxes .lista h2 {
@@ -143,6 +139,11 @@
 .ultimosposts .boxes .lista p {
     font-size: 20px;
     margin-bottom: 30px;
+}
+
+.ultimosposts .maislidas {
+    display: block;
+    max-width: 33%;
 }
 
 .ultimosposts .maislidas h1 {

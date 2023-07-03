@@ -1,5 +1,4 @@
-import '../style/home/posts.css';
-import '../style/home/ultimosposts.css';
+import '../style/home.css';
 import Header from '../components/header.js';
 import Posts from '../components/home/posts.js';
 import UltimosPosts from '../components/home/ultimosposts.js';

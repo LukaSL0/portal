@@ -57,9 +57,9 @@ header nav a {
 }
 
 header nav p {
+  margin-left: 30%;
   color: white;
   font-size: 40px;
-  margin-left: 30%;
   cursor: pointer;
 }
 
@@ -80,7 +80,54 @@ input#busca {
   text-indent: 22px;
 }
 
+@media screen and (max-width: 910px) {
+  header {
+    height: 70px;
+  }
+  header nav p {
+    font-size: 35px;
+  }
+  header nav form input {
+    padding: 8%;
+  }
+  header nav img {
+    width: 24px;
+    height: 20px;
+  }
+}
 
+@media screen and (max-width: 700px) {
+  header {
+    height: 65px;
+  }
+  header nav p {
+    font-size: 32px;
+  }
+  header nav form input {
+    padding: 7%;
+  }
+  header nav img {
+    width: 23px;
+    height: 19px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  header {
+    height: 60px;
+  }
+  header nav p {
+    font-size: 30px;
+  }
+  header nav form input {
+    max-width: 130px;
+    padding: 6% 10% 6% 10%;
+  }
+  header nav img {
+    width: 23px;
+    height: 19px;
+  }
+}
 
 /*---------------------------------------*/
 

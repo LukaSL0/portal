@@ -8,7 +8,11 @@ export default function Header() {
                 </div>
                 <a href="/"><p>Portal<strong>MCZ</strong></p></a>
                 <form method="post">
-                    <input type="text" id="busca" name="busca" placeholder="Buscar" />
+                    {
+                        (window.innerWidth > "600")?
+                            <input type="text" id="busca" name="busca" placeholder="Buscar" />:
+                            <input type="text" id="busca" name="busca" placeholder="" />
+                    }
                 </form>
             </nav>
         </header>

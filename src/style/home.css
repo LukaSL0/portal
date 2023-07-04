@@ -112,9 +112,10 @@
 @media screen and (max-width: 880px) {
     .posts {
         margin: 14% auto 4% auto;
+        width: 73%;
     }
     .posts .post .autor p {
-        font-size: 11px;
+        font-size: 12px;
     }
     .posts .post .textos h1 {
         font-size: 39px;
@@ -139,7 +140,7 @@
         font-size: 32px;
     }
     .posts .post .textos p {
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 
@@ -158,7 +159,7 @@
         font-size: 26px;
     }
     .posts .post .textos p {
-        font-size: 8px;
+        font-size: 9px;
     }
 }
 
@@ -177,7 +178,7 @@
         font-size: 22px;
     }
     .posts .post .textos p {
-        font-size: 6px;
+        font-size: 7px;
     }
 }
 
@@ -196,7 +197,7 @@
         font-size: 19px;
     }
     .posts .post .textos p {
-        font-size: 5px;
+        font-size: 6px;
     }
 }
 
@@ -215,7 +216,7 @@
         font-size: 17px;
     }
     .posts .post .textos p {
-        font-size: 4px;
+        font-size: 5px;
     }
 }
 
@@ -399,6 +400,29 @@
         max-width: 75%;
         margin: auto;
         margin-bottom: 25px;
+        height: 458px;
+    }
+    .ultimosposts .lista .postagem h2 {
+        font-size: 12.5px;
+    }
+    .ultimosposts .lista .postagem h1 {
+        font-size: 21.5px;
+    }
+    .ultimosposts .lista .postagem p {
+        font-size: 13px;
+    }
+    .ultimosposts .lista .postagem .post-textos a {
+        padding: 4%;
+        font-size: 13px;
+    }
+    .ultimosposts .boxes .maislidas h1 {
+        font-size: 15px;
+    }
+    .ultimosposts .boxes .maislidas h2 {
+        font-size: 9px;
+    }
+    .ultimosposts .boxes .maislidas p {
+        font-size: 8px;
     }
     .ultimosposts .maislidas {
         max-width: 75%;
@@ -410,5 +434,8 @@
 @media screen and (max-width: 600px) {
     .ultimosposts h1 {
         font-size: 23px;
+    }
+    .ultimosposts .lista .postagem p {
+        font-size: 12px;
     }
 }

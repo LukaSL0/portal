@@ -396,12 +396,12 @@
         display: block;
     }
     .ultimosposts .lista .postagem {
-        max-width: 80%;
+        max-width: 75%;
         margin: auto;
         margin-bottom: 25px;
     }
     .ultimosposts .maislidas {
-        max-width: 80%;
+        max-width: 75%;
         margin: auto;
         margin-bottom: 20px;
     }
@@ -409,6 +409,6 @@
 
 @media screen and (max-width: 600px) {
     .ultimosposts h1 {
-        font-size: 26px;
+        font-size: 23px;
     }
 }

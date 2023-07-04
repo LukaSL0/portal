@@ -312,8 +312,8 @@
 }
 
 .ultimosposts .lista2 .maislida img {
-    width: 195px;
-    height: 189px;
+    width: 37%;
+    height: 37%;
 }
 
 .ultimosposts .lista2 .maislida h2 {
@@ -339,9 +339,6 @@
         width: 410px;
         height: 573px;
     }
-    .ultimosposts .lista .postagem img {
-        width: 100%;
-    }
     .ultimosposts .boxes .lista h2 {
         font-size: 14px;
     }
@@ -355,14 +352,63 @@
     .ultimosposts .lista .postagem .post-textos a {
         font-size: 16px;
     }
-    .ultimosposts .lista2 .maislida img {
-        width: 146px;
-        height: 142px;
-    }
     .ultimosposts .lista2 .maislida h2 {
         font-size: 14px;
     }
     .ultimosposts .lista2 .maislida p {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .ultimosposts h1 {
+        font-size: 36px;
+    }
+    .ultimosposts .lista .postagem h2 {
+        font-size: 14px;
+    }
+    .ultimosposts .lista .postagem h1 {
+        font-size: 25px;
+    }
+    .ultimosposts .lista .postagem p {
+        font-size: 14px;
+    }
+    .ultimosposts .boxes .maislidas h1 {
+        font-size: 17px;
+    }
+    .ultimosposts .boxes .maislidas h2 {
+        font-size: 10.5px;
+    }
+    .ultimosposts .boxes .maislidas p {
+        font-size: 9.5px;
+    }
+    .ultimosposts .lista .postagem {
+        height: 490px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .ultimosposts h1 {
+        font-size: 32px;
+        padding: 8% 0;
+    }
+    .ultimosposts .boxes {
+        display: block;
+    }
+    .ultimosposts .lista .postagem {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .ultimosposts .maislidas {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ultimosposts h1 {
+        font-size: 26px;
     }
 }

@@ -18,6 +18,9 @@ export default function UltimosPosts() {
                             <MaisLidas />
                             <MaisLidas />
                             <MaisLidas />
+                            <MaisLidas />
+                            <MaisLidas />
+                            <MaisLidas />
                         </div>
                     </div>
                 </div>

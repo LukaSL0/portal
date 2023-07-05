@@ -1,4 +1,4 @@
-import '../../style/noticiainfo.css';
+import '../../style/noticia.css';
 import MaisLidas from '../maislidas.js';
 
 export default function NoticiaInfo() {

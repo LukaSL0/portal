@@ -1,8 +1,154 @@
+body {
+    background-color: #EAEAEA;
+}
+
 div.noticiainfo {
     display: flex;
+    margin: 10% 1.5% 1.5% 1.5%;
+    justify-content: space-between;
+}
+
+div.noticiainfo .noticiacompleta {
+    width: 65%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5% 2%;
+    height: fit-content;
+}
+
+div.noticiainfo .noticiacompleta p {
+    color: #7B8591;
+    font-size: 20px;
 }
 
 div.noticiainfo .noticiaheader h1 {
     color: #303336;
     font-size: 42px;
+    margin-bottom: 22px;
+}
+
+div.noticiainfo .noticiadesc h2 {
+    color: #7B8591;
+    font-size: 33px;
+    margin: 25px 0;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.autor img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.autor p {
+    margin-left: 5px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1450px) {
+    .autor p {
+        font-size: 14px;
+    }
+    div.noticiainfo .noticiaheader h1 {
+        font-size: 32px;
+    }
+    div.noticiainfo .noticiadesc h2 {
+        font-size: 24px;
+    }
+    div.noticiainfo .noticiacompleta p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .autor img {
+        width: 30px;
+        height: 30px;
+    }
+    .autor p {
+        font-size: 14px;
+    }
+    div.noticiainfo .noticiacompleta p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .autor p {
+        font-size: 12px;
+    }
+    div.noticiainfo .noticiaheader h1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .autor p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .autor p {
+        font-size: 12px;
+    }
+    div.noticiainfo .noticiaheader h1 {
+        font-size: 21.5px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .autor img {
+        width: 23px;
+        height: 23px;
+    }
+    .autor p {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .autor img {
+        width: 20px;
+        height: 20px;
+    }
+    .autor p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .autor img {
+        width: 16px;
+        height: 16px;
+    }
+    .autor p {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .autor img {
+        width: 15px;
+        height: 15px;
+    }
+    .autor p {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .autor img {
+        width: 12px;
+        height: 12px;
+    }
+    .autor p {
+        font-size: 5px;
+    }
 }

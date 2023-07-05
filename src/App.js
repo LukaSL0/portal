@@ -10,7 +10,7 @@ export default function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route exact path='/' element={<Home />} />
         <Route path='/noticia' element={<Noticia />} />
       </Routes>
     </HashRouter>

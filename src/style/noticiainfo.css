@@ -1,0 +1,8 @@
+div.noticiainfo {
+    display: flex;
+}
+
+div.noticiainfo .noticiaheader h1 {
+    color: #303336;
+    font-size: 42px;
+}

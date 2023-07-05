@@ -1,4 +1,4 @@
-import MaisLidas from "./modules/maislidas.js";
+import MaisLidas from "../maislidas.js";
 import Postagem from "./modules/postagem.js";
 
 export default function UltimosPosts() {

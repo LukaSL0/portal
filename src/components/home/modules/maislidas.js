@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import MaisLida from "./maislida.js";
 
 export default function MaisLidas() {
 
@@ -11,11 +12,13 @@ export default function MaisLidas() {
     }, [])
 
     return (
-        <div className="maislida">
-            <img src="assets/maislidas.png" alt="" />
-            <div className="maislida-textos">
-                <h2>NATUREZA</h2>
-                <p>A importância da floresta do ártico para a biodiversidade mundial. Qual o impacto o degelo na fauna e flora?</p>
+        <div className="maislidas">
+            <h1>AS MAIS LIDAS</h1>
+            <div className="lista2">
+                <MaisLida />
+                <MaisLida />
+                <MaisLida />
+                <MaisLida />
             </div>
         </div>
     )

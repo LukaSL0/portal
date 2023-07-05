@@ -142,7 +142,12 @@ header nav form input {
     background-position: 10px center;
     max-width: 40px;
     text-indent: 0;
-    padding: 18%;
+    padding-top: 18%;
+    padding-bottom: 18%;
+  }
+  header nav form input:focus {
+    background-size: 0px;
+    max-width: 65px;
   }
 }
 
@@ -169,12 +174,12 @@ header nav form input {
 
 /*---------------------------------------*/
 
-.ultimosposts .maislidas {
+div.maislidas {
   display: block;
   max-width: 33%;
 }
 
-.ultimosposts .maislidas h1 {
+div.maislidas h1 {
   color: white;
   letter-spacing: 2px;
   border-radius: 10px 10px 0 0;
@@ -182,7 +187,7 @@ header nav form input {
   font-size: 27px;
 }
 
-.ultimosposts .lista2 .maislida {
+.lista2 .maislida {
   width: 100%;
   background-color: white;
   height: auto;
@@ -190,65 +195,65 @@ header nav form input {
   display: flex;
 }
 
-.ultimosposts .lista2 .maislida .maislida-textos {
+.lista2 .maislida .maislida-textos {
   display: block;
   padding: 4%;
 }
 
-.ultimosposts .lista2 .maislida img {
+.lista2 .maislida img {
   width: 37%;
   height: 37%;
 }
 
-.ultimosposts .lista2 .maislida h2 {
+.lista2 .maislida h2 {
   letter-spacing: 2px;
   font-size: 16px;
   color: #40BE65;
   margin-bottom: 15px;
 }
 
-.ultimosposts .lista2 .maislida p {
+.lista2 .maislida p {
   color: #7B8591;
   font-size: 18px;
 }
 
 @media screen and (max-width: 1366px) {
-  .ultimosposts .boxes .maislidas h1 {
+  div.maislidas h1 {
       font-size: 24px;
   }
-  .ultimosposts .lista2 .maislida h2 {
+  .lista2 .maislida h2 {
       font-size: 14px;
   }
-  .ultimosposts .lista2 .maislida p {
+  .lista2 .maislida p {
       font-size: 14px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .ultimosposts .boxes .maislidas h1 {
+  div.maislidas h1 {
       font-size: 17px;
   }
-  .ultimosposts .boxes .maislidas h2 {
+  div.maislidas h2 {
       font-size: 10.5px;
   }
-  .ultimosposts .boxes .maislidas p {
+  div.maislidas p {
       font-size: 10px;
   }
 }
 
 @media screen and (max-width: 880px) {
-  .ultimosposts .boxes .maislidas h1 {
+  div.maislidas {
+    max-width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+  div.maislidas h1 {
       font-size: 15px;
   }
-  .ultimosposts .boxes .maislidas h2 {
+  div.maislidas h2 {
       font-size: 9px;
   }
-  .ultimosposts .boxes .maislidas p {
+  div.maislidas p {
       font-size: 9px;
-  }
-  .ultimosposts .maislidas {
-      max-width: 75%;
-      margin: auto;
-      margin-bottom: 20px;
   }
 }

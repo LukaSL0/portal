@@ -7,7 +7,7 @@ export default function Header() {
                     <img src="assets/menu.svg" alt="" />
                 </div>
                 <a href="/"><p>Portal<strong>MCZ</strong></p></a>
-                <form method="post">
+                <form action="">
                     {
                         (window.innerWidth > "550")?
                             <input type="text" name="busca" placeholder="Buscar" />:

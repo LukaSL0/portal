@@ -6,6 +6,7 @@ export default function Posts() {
     const [titulo, setTitulo] = useState("");
     const [shortdesc, setShortdesc] = useState("");
     const [imagem, setImagem] = useState("");
+    const [slug, setSlug] = useState("");
 
     const data = {
         "senha": "1YNzm1zPIlMdQON6oChlnF58"
@@ -18,6 +19,7 @@ export default function Posts() {
                 setTitulo(info.titulo);
                 setShortdesc(info.shortheader);
                 setImagem(info.imagem);
+                setSlug(info.slug);
             })
             .catch((err) => {
                 console.log(err.message);
@@ -36,7 +38,7 @@ export default function Posts() {
                         <p>POR {autor}</p>
                     </div>
                     <div className="textos">
-                        <a href="/noticia"><h1>{titulo}</h1></a>
+                        <a href={`/noticia?slug=${slug}`}><h1>{titulo}</h1></a>
                         <p>{shortdesc}...</p>
                     </div>
                 </div>

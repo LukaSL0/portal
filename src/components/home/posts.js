@@ -9,17 +9,19 @@ export default function Posts() {
     const [slug, setSlug] = useState("");
 
     useEffect(() => {
-        Api.post("/portal")
-            .then((res) => {
+        const fetchData = async () => {
+            try {
+                const res = await Api.post("/portal");
                 const info = res.data[0];
                 setTitulo(info.titulo);
                 setShortdesc(info.shortheader);
                 setImagem(info.imagem);
                 setSlug(info.slug);
-            })
-            .catch((err) => {
+            } catch (err) {
                 console.log(err.message);
-            })
+            }
+        }
+        fetchData();
     }, [])
 
     const autor = "LUKA";

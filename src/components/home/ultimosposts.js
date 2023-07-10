@@ -8,29 +8,30 @@ export default function UltimosPosts() {
     const [noticias, setNoticias] = useState([]);
 
     useEffect(() => {
-        Api.post("/portal")
-            .then((res) => {
-                const info = res.data;
-                for (let i = 1; i < info.length; i++) {
-                    if (info[i].titulo.split(' ').length > 7) {
-                        var titulo = `${info[i].titulo.split(' ')[0]}
-                        ${info[i].titulo.split(' ')[1]}
-                        ${info[i].titulo.split(' ')[2]}
-                        ${info[i].titulo.split(' ')[3]}
-                        ${info[i].titulo.split(' ')[4]}
-                        ${info[i].titulo.split(' ')[5]}
-                        ${info[i].titulo.split(' ')[6]}...`;
-                    } else {
-                        // eslint-disable-next-line
-                        var titulo = info[i].titulo;
-                    }
-                    // eslint-disable-next-line
-                    setNoticias(prevNoticia => [...prevNoticia, <Postagem imagem={info[i].imagem} tipo={info[i].categoria} titulo={titulo} desc={info[i].shortheader} redirect={`/noticia?slug=${info[i].slug}`} />]);
-                }
-            })
-            .catch((err) => {
-                console.log(err.message);
-            })
+        const fetchData = async () => {
+            const res = await Api.post("/portal");
+            const info = res.data;
+            
+            for (let i = 1; i < info.length; i++) {
+              let titulo;
+              if (info[i].titulo.split(' ').length > 7) {
+                titulo = `${info[i].titulo.split(' ').slice(0, 7).join(' ')}...`;
+              } else {
+                titulo = info[i].titulo;
+              }
+              
+              setNoticias(prevNoticia => [...prevNoticia,
+                <Postagem
+                  imagem={info[i].imagem}
+                  tipo={info[i].categoria}
+                  titulo={titulo}
+                  desc={info[i].shortheader}
+                  redirect={`/noticia?slug=${info[i].slug}`}
+                />
+              ]);
+            }
+        }
+        fetchData();
     }, [])
     
     return (

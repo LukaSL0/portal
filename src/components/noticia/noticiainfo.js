@@ -15,14 +15,7 @@ export default function NoticiaInfo() {
                             <img src="assets/icon.png" alt="" />
                             <p>POR {autor}</p>
                         </div>
-                        <p>Ullamco sint non culpa enim.
-        Et Lorem nulla proident irure magna enim.
-        Amet nulla adipisicing enim dolor sint esse consectetur nostrud amet.
-        Et anim voluptate voluptate elit quis cillum deserunt reprehenderit sit occaecat.
-        Consectetur dolor laborum incididunt minim sint. Est ad dolor quis laboris minim proident culpa velit exercitation.
-        Tempor dolore sint laboris dolore nisi quis. Laboris elit laboris laboris ut quis nostrud anim deserunt amet.
-        Id aliqua dolore veniam anim voluptate amet pariatur quis amet laborum irure officia.
-        Consequat adipisicing proident ut sint laborum labore duis et anim mollit.</p>
+                        <p>Ullamco sint non culpa enim.Et Lorem nulla proident irure magna enim.Amet nulla adipisicing enim dolor sint esse consectetur nostrud amet.Et anim voluptate voluptate elit quis cillum deserunt reprehenderit sit occaecat.Consectetur dolor laborum incididunt minim sint. Est ad dolor quis laboris minim proident culpa velit exercitation.Tempor dolore sint laboris dolore nisi quis. Laboris elit laboris laboris ut quis nostrud anim deserunt amet.Id aliqua dolore veniam anim voluptate amet pariatur quis amet laborum irure officia.Consequat adipisicing proident ut sint laborum labore duis et anim mollit.</p>
                     </div>
                     <div className="noticiadesc">
                         <h2>Quem é um desenvolvedor Full Stack?</h2>

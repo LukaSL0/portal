@@ -10,15 +10,24 @@ export default function NoticiaInfo() {
     const [desc , setDesc] = useState("");
     const [paragrafo , setParagrafo] = useState("");
 
+    function alerta() {
+        document.querySelector('.autor').style.display = 'none';
+        setParagrafo("A Notícia que você buscava não foi encontrada em nosso banco de dados. Caso isso seja um erro, contate um membro da equipe.");
+    }
+
     useEffect(() => {
         const currentUrl = window.location.href;
         Api.post(`/portal/noticia?${currentUrl.split('noticia?')[1]}`)
             .then((res) => {
                 const info = res.data;
-                setTitulo(info.titulo);
-                setHeader(info.noticiaheader);
-                setDesc(info.noticiadesc);
-                setParagrafo(info.noticiaparagrafo);
+                if (info === "Não Encontrado") {
+                    alerta();
+                } else {
+                    setTitulo(info.titulo);
+                    setHeader(info.noticiaheader);
+                    setDesc(info.noticiadesc);
+                    setParagrafo(info.noticiaparagrafo);
+                }
             })
             .catch((err) => {
                 console.log(err.message);

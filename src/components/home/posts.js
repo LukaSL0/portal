@@ -5,6 +5,7 @@ export default function Posts() {
 
     const [titulo, setTitulo] = useState("");
     const [shortdesc, setShortdesc] = useState("");
+    const [imagem, setImagem] = useState("");
 
     const data = {
         "senha": "1YNzm1zPIlMdQON6oChlnF58"
@@ -16,6 +17,7 @@ export default function Posts() {
                 const info = res.data[0];
                 setTitulo(info.titulo);
                 setShortdesc(info.shortheader);
+                setImagem(info.imagem);
             })
             .catch((err) => {
                 console.log(err.message);
@@ -27,6 +29,7 @@ export default function Posts() {
     return (
         <section>
             <div className="posts">
+            <img src={imagem} alt="background"></img>
                 <div className="post">
                     <div className="autor">
                         <img src="assets/icon.png" alt="" />
@@ -34,7 +37,7 @@ export default function Posts() {
                     </div>
                     <div className="textos">
                         <a href="/noticia"><h1>{titulo}</h1></a>
-                        <p>{shortdesc}</p>
+                        <p>{shortdesc}...</p>
                     </div>
                 </div>
             </div>

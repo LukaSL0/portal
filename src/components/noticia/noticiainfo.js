@@ -20,7 +20,7 @@ export default function NoticiaInfo() {
         Api.post(`/portal/noticia?${currentUrl.split('noticia?')[1]}`)
             .then((res) => {
                 const info = res.data;
-                if (info === "Não Encontrado") {
+                if (!info) {
                     alerta();
                 } else {
                     setTitulo(info.titulo);

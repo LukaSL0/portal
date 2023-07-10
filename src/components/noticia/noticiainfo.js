@@ -10,15 +10,17 @@ export default function NoticiaInfo() {
     const [desc , setDesc] = useState("");
     const [paragrafo , setParagrafo] = useState("");
 
-    function alerta() {
+    const alerta = () => {
         document.querySelector('.autor').style.display = 'none';
         setParagrafo("A Notícia que você buscava não foi encontrada em nosso banco de dados. Caso isso seja um erro, contate um membro da equipe.");
     }
 
     useEffect(() => {
-        const currentUrl = window.location.href;
-        Api.post(`/portal/noticia?${currentUrl.split('noticia?')[1]}`)
-            .then((res) => {
+        const fetchData = async () => {
+            try {
+                // const currentUrl = window.location.href;
+                const query = new URLSearchParams(window.location.search).toString();
+                const res = await Api.get(`/portal/noticia?${query}`);
                 const info = res.data;
                 if (!info) {
                     alerta();
@@ -28,10 +30,11 @@ export default function NoticiaInfo() {
                     setDesc(info.noticiadesc);
                     setParagrafo(info.noticiaparagrafo);
                 }
-            })
-            .catch((err) => {
+            } catch (err) {
                 console.log(err.message);
-            })
+            }
+        }
+        fetchData();
     }, [])
 
     const autor = "LUKA";

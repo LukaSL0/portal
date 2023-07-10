@@ -11,7 +11,7 @@ export default function Posts() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await Api.post("/portal");
+                const res = await Api.get("/portal");
                 const info = res.data[0];
                 setTitulo(info.titulo);
                 setShortdesc(info.shortheader);

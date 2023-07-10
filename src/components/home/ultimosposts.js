@@ -1,7 +1,7 @@
 import MaisLidas from "../maislidas.js";
 import Postagem from "./modules/postagem.js";
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function UltimosPosts() {
 
@@ -9,16 +9,15 @@ export default function UltimosPosts() {
         "senha": "1YNzm1zPIlMdQON6oChlnF58"
     }
 
-    const Noticias = [];
+    const [noticias, setNoticias] = useState([]);
 
     useEffect(() => {
         axios.post("http://localhost:5000/portal", data)
             .then((res) => {
                 const info = res.data;
                 for (let i = 1; i < info.length; i++) {
-                    Noticias.push(<Postagem imagem="assets/postagem1.png" tipo="DICA DE AVENTURA" titulo="Como encarar o surf mesmo no frio" desc="A água gelada e o vento pode acabar com a sua felicidade de ir para a água. Cientistas afirmam que a chance de hipotermia é real e você precisa se cuidar. Veja como." redirect="" />);
+                    setNoticias(prevNoticia => [...prevNoticia, <Postagem imagem={info[i].imagem} tipo={info[i].categoria} titulo={info[i].titulo} desc={info[i].shortheader} redirect="" />]);
                 }
-                console.log(Noticias);
             })
             .catch((err) => {
                 console.log(err.message);
@@ -32,7 +31,7 @@ export default function UltimosPosts() {
                 <div className="boxes">
                     <div className="lista">
                         {
-                            
+                            noticias
                         }
                     </div>
                     <MaisLidas />

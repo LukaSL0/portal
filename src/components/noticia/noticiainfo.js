@@ -18,7 +18,6 @@ export default function NoticiaInfo() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // const currentUrl = window.location.href;
                 const query = new URLSearchParams(window.location.search).toString();
                 const res = await Api.get(`/portal/noticia?${query}`);
                 const info = res.data;

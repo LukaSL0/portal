@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import Api from "../../Api.js";
 
 export default function Posts() {
 
@@ -8,12 +8,8 @@ export default function Posts() {
     const [imagem, setImagem] = useState("");
     const [slug, setSlug] = useState("");
 
-    const data = {
-        "senha": "1YNzm1zPIlMdQON6oChlnF58"
-    }
-
     useEffect(() => {
-        axios.post("http://localhost:5000/portal", data)
+        Api.post("/portal")
             .then((res) => {
                 const info = res.data[0];
                 setTitulo(info.titulo);

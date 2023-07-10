@@ -1,18 +1,14 @@
 import MaisLidas from "../maislidas.js";
 import Postagem from "./modules/postagem.js";
-import axios from "axios";
 import { useEffect, useState } from "react";
+import Api from "../../Api.js";
 
 export default function UltimosPosts() {
-
-    const data = {
-        "senha": "1YNzm1zPIlMdQON6oChlnF58"
-    }
 
     const [noticias, setNoticias] = useState([]);
 
     useEffect(() => {
-        axios.post("http://localhost:5000/portal", data)
+        Api.post("/portal")
             .then((res) => {
                 const info = res.data;
                 for (let i = 1; i < info.length; i++) {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../style/noticia.css';
 import MaisLidas from '../maislidas.js';
-import axios from "axios";
+import Api from '../../Api';
 
 export default function NoticiaInfo() {
 
@@ -10,13 +10,9 @@ export default function NoticiaInfo() {
     const [desc , setDesc] = useState("");
     const [paragrafo , setParagrafo] = useState("");
 
-    const data = {
-        "senha": "1YNzm1zPIlMdQON6oChlnF58"
-    }
-
     useEffect(() => {
         const currentUrl = window.location.href;
-        axios.post(`http://localhost:5000/portal/noticia?${currentUrl.split('noticia?')[1]}`, data)
+        Api.post(`/portal/noticia?${currentUrl.split('noticia?')[1]}`)
             .then((res) => {
                 const info = res.data;
                 setTitulo(info.titulo);

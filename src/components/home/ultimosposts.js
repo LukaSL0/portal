@@ -22,6 +22,7 @@ export default function UltimosPosts() {
               
               setNoticias(prevNoticia => [...prevNoticia,
                 <Postagem
+                  key={i}
                   imagem={info[i].imagem}
                   tipo={info[i].categoria}
                   titulo={titulo}

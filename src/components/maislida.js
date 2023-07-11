@@ -1,11 +1,13 @@
-export default function MaisLida() {
+export default function MaisLida(props) {
 
     return (
         <div className="maislida">
-            <img src="assets/maislidas.png" alt="" />
+            <div className="imagem">
+                <img src={props.imagem} alt="" />
+            </div>
             <div className="maislida-textos">
-                <h2>NATUREZA</h2>
-                <p>A importância da floresta do ártico para a biodiversidade mundial. Qual o impacto o degelo na fauna e flora?</p>
+                <h2>{props.categoria}</h2>
+                <p>{props.shortheader}</p>
             </div>
         </div>
     )

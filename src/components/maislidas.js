@@ -1,24 +1,37 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Api from '../Api.js';
 import MaisLida from "./maislida.js";
 
 export default function MaisLidas() {
+    const [noticias, setNoticias] = useState([]);
 
     useEffect(() => {
-        const maislidas = document.querySelectorAll('.maislida');
-        const ultimo = maislidas[maislidas.length - 1];
-        ultimo.style.borderRadius = '0 0 10px 10px';
-        ultimo.style.padding = '5%';
-        ultimo.style.marginBottom = '10px';
+        const fetchData = async () => {
+            try {
+                const res = await Api.get('/portal');
+                const data = res.data;
+
+                data.sort((a, b) => {
+                    return b.views - a.views;
+                })
+
+                setNoticias(data);
+            } catch (err) {
+                console.log(err.message);
+            }
+        }
+        fetchData();
     }, [])
 
     return (
         <div className="maislidas">
             <h1>AS MAIS LIDAS</h1>
             <div className="lista2">
-                <MaisLida />
-                <MaisLida />
-                <MaisLida />
-                <MaisLida />
+                {
+                    noticias.map(( noticia, i ) => (
+                        <MaisLida key={i} categoria={noticia.categoria} shortheader={noticia.shortheader} imagem={noticia.imagem} />
+                    ))
+                }
             </div>
         </div>
     )

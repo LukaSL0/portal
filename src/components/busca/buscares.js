@@ -32,7 +32,10 @@ export default function BuscaRes() {
                     resultados.map((resultado, i) => (
                         <BuscaResLayout
                             key={i}
-                            
+                            imagem={resultado.imagem}
+                            titulo={resultado.titulo}
+                            desc={resultado.shortheader}
+                            slug={resultado.slug}
                         />
                     ))
                 }

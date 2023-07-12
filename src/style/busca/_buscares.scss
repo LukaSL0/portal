@@ -2,7 +2,6 @@
     height: auto;
     width: 65%;
     display: block;
-    background-color: black;
     border-radius: 10px 10px 0 0;
     margin: 8% auto 4% auto;
     @include responsive(1366px) { margin: 10% auto 4% auto; }
@@ -22,6 +21,41 @@
         h1 {
             color: white;
             font-weight: bold;
+            @include fontSize(14px, 38px, 345px, 1920px)
+        }
+    }
+
+    &__encontrados {
+        display: block;
+
+        &__resultado {
+            display: flex;
+            width: 100%;
+            background-color: white;
+            padding: 4%;
+            &:last-child {
+                border-radius: 0 0 10px 10px;
+            }
+            @include responsive(700px) { display: block; }
+
+            img {
+                width: 33%;
+                border-radius: 10px;
+                @include responsive(700px) { width: 100%; margin-bottom: 8px; }
+            }
+
+            &__textos {
+                padding: 1% 1% 0 2.5%;
+
+                h1 {
+                    margin-bottom: 8px;
+                    color: black;
+                    @include fontSize(15px, 36px, 345px, 1920px)
+                }
+                p {
+                    @include fontSize(11px, 26px, 345px, 1920px)
+                }
+            }
         }
     }
 }

@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 export default function Header() {
 
     const handleSubmit = (e) => {

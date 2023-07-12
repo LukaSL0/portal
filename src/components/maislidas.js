@@ -24,15 +24,15 @@ export default function MaisLidas() {
     }, [])
 
     return (
-        <div className="maislidas">
+        <section className="maislidas">
             <h1>AS MAIS LIDAS</h1>
-            <div className="lista2">
+            <div className="maislidas__lista">
                 {
                     noticias.map(( noticia, i ) => (
                         <MaisLida key={i} categoria={noticia.categoria} shortheader={noticia.shortheader} imagem={noticia.imagem} />
                     ))
                 }
             </div>
-        </div>
+        </section>
     )
 }

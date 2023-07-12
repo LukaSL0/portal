@@ -31,11 +31,6 @@ body { background-color: #EAEAEA; }
                 margin-bottom: 22px;
                 @include fontSize(16px, 42px, 490px, 1920px)
             }
-            h2 {
-                color: #7B8591;
-                margin: 25px 0;
-                @include fontSize(15px, 33px, 490px, 1920px)
-            }
 
             &__autor {
                 display: flex;
@@ -59,6 +54,14 @@ body { background-color: #EAEAEA; }
                     font-weight: bold;
                     @include fontSize(5px, 16px, 380px, 1920px);
                 }
+            }
+        }
+
+        &__noticiadesc {
+            h2 {
+                color: #7B8591;
+                margin: 25px 0;
+                @include fontSize(15px, 33px, 490px, 1920px)
             }
         }
     }

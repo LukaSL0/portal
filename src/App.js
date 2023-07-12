@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home.js';
 import Noticia from './pages/noticia.js';
@@ -14,4 +14,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-

@@ -28,7 +28,7 @@ export default function MaisLidas() {
             <h1>AS MAIS LIDAS</h1>
             <div className="maislidas__lista">
                 {
-                    noticias.map(( noticia, i ) => (
+                    noticias.slice(0, 5).map(( noticia, i ) => (
                         <MaisLida key={i} categoria={noticia.categoria} shortheader={noticia.shortheader} imagem={noticia.imagem} />
                     ))
                 }

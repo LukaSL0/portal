@@ -27,18 +27,16 @@ export default function Posts() {
     const autor = "LUKA";
 
     return (
-        <section>
-            <div className="posts">
+        <section className="posts">
             <img src={imagem} alt="background"></img>
-                <div className="post">
-                    <div className="autor">
-                        <img src="assets/icon.png" alt="" />
-                        <p>POR {autor}</p>
-                    </div>
-                    <div className="textos">
-                        <a href={`/noticia?slug=${slug}`}><h1>{titulo}</h1></a>
-                        <p>{shortdesc}...</p>
-                    </div>
+            <div className="posts__post">
+                <div className="posts__post__autor">
+                    <img src="assets/icon.png" alt="" />
+                    <p>POR {autor}</p>
+                </div>
+                <div className="posts__post__textos">
+                    <a href={`/noticia?slug=${slug}`}><h1>{titulo}</h1></a>
+                    <p>{shortdesc}...</p>
                 </div>
             </div>
         </section>

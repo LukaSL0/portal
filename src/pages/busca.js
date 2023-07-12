@@ -1,13 +1,13 @@
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
-import NoticiaInfo from '../components/noticia/noticiainfo.js';
+import BuscaRes from '../components/busca/buscares.js';
 
-export default function Noticia() {
+export default function Busca() {
 
     return (
         <>
             <Header />
-                <NoticiaInfo />
+                <BuscaRes />
             <Footer />
         </>
     )

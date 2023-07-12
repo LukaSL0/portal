@@ -1,0 +1,27 @@
+.buscares {
+    height: auto;
+    width: 65%;
+    display: block;
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+    margin: 8% auto 4% auto;
+    @include responsive(1366px) { margin: 10% auto 4% auto; }
+    @include responsive(880px) { margin: 14% auto 4% auto; width: 75%; }
+    @include responsive(690px) { margin: 16% auto 4% auto; }
+    @include responsive(560px) { margin: 18% auto 4% auto; }
+    @include responsive(490px) { margin: 20% auto 4% auto; }
+    @include responsive(415px) { margin: 23% auto 4% auto; }
+    @include responsive(380px) { margin: 26.5% auto 4% auto; }
+
+    &__header {
+        background-color: #006385;
+        padding: 3% 5%;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+
+        h1 {
+            color: white;
+            font-weight: bold;
+        }
+    }
+}

@@ -6,11 +6,11 @@ import Footer from '../components/footer.js';
 export default function Home() {
 
     return (
-        <div className="Home">
+        <>
             <Header />
-            <Posts />
-            <UltimosPosts />
+                <Posts />
+                <UltimosPosts />
             <Footer />
-        </div>
+        </>
     )
 }

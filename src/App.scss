@@ -30,7 +30,7 @@ body {
 
 /*---------------------------------------*/
 
-@import 'style/home', 'style/noticia';
+@import 'style/home', 'style/noticia', 'style/busca';
 
 /*---------------------------------------*/
 
@@ -71,7 +71,7 @@ header {
       @include fontSize(25px, 40px, 550px, 1920px);
       @include responsive(550px) { margin-left: 5%; }
     }
-    form input {
+    input {
       background-color: #008BB4;
       border-radius: 10px;
       padding: 10%;

@@ -1,4 +1,4 @@
-import '../style/noticia.css';
+import '../style/noticia.scss';
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
 import NoticiaInfo from '../components/noticia/noticiainfo.js';

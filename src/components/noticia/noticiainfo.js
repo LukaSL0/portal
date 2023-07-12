@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import '../../style/noticia.css';
 import MaisLidas from '../maislidas.js';
 import Api from '../../Api';
 
@@ -39,24 +38,22 @@ export default function NoticiaInfo() {
     const autor = "LUKA";
 
     return (
-        <section>
-            <div className="noticiainfo">
-                <div className="noticiacompleta">
-                    <div className="noticiaheader">
-                        <h1>{titulo}</h1>
-                        <div className="autor">
-                            <img src="assets/icon.png" alt="" />
-                            <p>POR {autor}</p>
-                        </div>
-                        <p>{header}</p>
+        <section className="noticiainfo">
+            <div className="noticiainfo__noticiacompleta">
+                <div className="noticiainfo__noticiacompleta__noticiaheader">
+                    <h1>{titulo}</h1>
+                    <div className="noticiainfo__noticiacompleta__noticiaheader__autor">
+                        <img src="assets/icon.png" alt="" />
+                        <p>POR {autor}</p>
                     </div>
-                    <div className="noticiadesc">
-                        <h2>{paragrafo}</h2>
-                        <p>{desc}</p>
-                    </div>
+                    <p>{header}</p>
                 </div>
-                <MaisLidas />
+                <div className="noticiainfo__noticiacompleta__noticiadesc">
+                    <h2>{paragrafo}</h2>
+                    <p>{desc}</p>
+                </div>
             </div>
+            <MaisLidas />
         </section>
     )
 }

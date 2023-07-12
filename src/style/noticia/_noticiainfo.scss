@@ -1,0 +1,65 @@
+body { background-color: #EAEAEA; }
+
+.noticiainfo {
+    display: flex;
+    margin: 9% 1.5% 1.5% 1.5%;
+    justify-content: space-between;
+    @include responsive(690px) { display: block; }
+
+    &__noticiacompleta {
+        width: 65%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 1.5% 2%;
+        height: fit-content;
+        @include responsive(690px) {
+            display: block;
+            width: 75%;
+            margin: 13% auto 43px auto;
+            padding: 3.5%;
+        }
+        @include responsive(490px) { margin: 18.5% auto 43px auto; }
+
+        p {
+            color: #7B8591;
+            @include fontSize(11.5px, 20px, 490px, 1920px)
+        }
+
+        &__noticiaheader {
+            h1 {
+                color: #303336;
+                margin-bottom: 22px;
+                @include fontSize(16px, 42px, 490px, 1920px)
+            }
+            h2 {
+                color: #7B8591;
+                margin: 25px 0;
+                @include fontSize(15px, 33px, 490px, 1920px)
+            }
+
+            &__autor {
+                display: flex;
+                align-items: center;
+                margin-bottom: 22px;
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    @include responsive(1366px) { width: 30px; height: 30px; }
+                    @include responsive(690px) { width: 23px; height: 23px; }
+                    @include responsive(560px) { width: 20px; height: 20px; }
+                    @include responsive(490px) { width: 16px; height: 16px; }
+                    @include responsive(415px) { width: 15px; height: 15px; }
+                    @include responsive(380px) { width: 12px; height: 12px; }
+                }
+                p {
+                    margin-left: 5px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    @include fontSize(5px, 16px, 380px, 1920px);
+                }
+            }
+        }
+    }
+}

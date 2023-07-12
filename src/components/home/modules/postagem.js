@@ -1,9 +1,9 @@
 export default function Postagem(props) {
 
     return (
-        <div className="postagem">
+        <div className="ultimosposts__boxes__lista__postagem">
             <img src={props.imagem} alt="" />
-            <div className="post-textos">
+            <div className="ultimosposts__boxes__lista__postagem__textos">
                 <h2>{props.tipo}</h2>
                 <h1>{props.titulo}</h1>
                 <p>{props.desc}</p>

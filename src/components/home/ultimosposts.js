@@ -36,16 +36,14 @@ export default function UltimosPosts() {
     }, [])
     
     return (
-        <section>
-            <div className="ultimosposts">
-                <h1>Últimas publicações</h1>
-                <div className="boxes">
-                    <div className="lista">
-                        {noticias}
-                    </div>
-                    <MaisLidas />
-                </div>
+        <section className="ultimosposts">
+          <h1>Últimas publicações</h1>
+          <div className="ultimosposts__boxes">
+            <div className="ultimosposts__boxes__lista">
+              {noticias}
             </div>
+            <MaisLidas />
+          </div>
         </section>
     )
 }

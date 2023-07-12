@@ -41,6 +41,8 @@
             img {
                 width: 33%;
                 border-radius: 10px;
+                margin: auto;
+                max-height: 200px;
                 @include responsive(700px) { width: 100%; margin-bottom: 8px; }
             }
 

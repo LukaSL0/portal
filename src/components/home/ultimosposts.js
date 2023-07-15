@@ -9,7 +9,7 @@ export default function UltimosPosts() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await Api.get("/portal");
+            const res = await Api.get("/portal/posts");
             const info = res.data;
             
             for (let i = 1; i < info.length; i++) {

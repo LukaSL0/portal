@@ -8,7 +8,7 @@ export default function MaisLidas() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await Api.get('/portal');
+                const res = await Api.get('/portal/posts');
                 const data = res.data;
 
                 data.sort((a, b) => {

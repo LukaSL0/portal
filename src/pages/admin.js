@@ -1,26 +1,35 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Api from "../Api";
 
 export default function Admin() {
 
     const [nome, setNome] = useState("");
+    const [senha, setSenha] = useState("")
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await Api.get("/portal/admin");
-                console.log(res.data);
-                setNome(res.data.info)
-            } catch (err) {
-                console.log(err);
-            }
+    const Login = async (e) => {
+
+        e.preventDefault();
+
+        const info = {
+            loginEnviado: nome,
+            senhaEnviada: senha
         }
-        fetchData();
-    }, [])
+
+        try {
+            const res = await Api.post("/portal/admin", info, { withCredentials: true });
+            console.log(res.data);
+        } catch (err) {
+            console.log(err.response);
+        }
+    }
 
     return (
         <div>
-            <h2>{nome}</h2>
+            <form action="" onSubmit={(e) => {Login(e)}}>
+                <input type="text" placeholder="Nome" onChange={(e) => {setNome(e.target.value)}} />
+                <input type="text" placeholder="Senha" onChange={(e) => {setSenha(e.target.value)}} />
+                <button type="submit">Login</button>
+            </form>
         </div>
     )
 }
